@@ -1,46 +1,34 @@
-title: 新闻小报
-email: studying@duzui.onmicrosoft.com
-description: > 
+title: 且听风吟
+description: > # 
 permalink: ':title/'
-baseurl: "/sea-blog"
-url: "https://lonelydrunk.github.io/sea-blog/" 
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: #if your site has a twitter account, enter it here
 
-# Author settings
-author: 语文小报
-author-pic: lonelydrunk.png
-about-author: 语文新闻小报制作。
-
-# Contact links
-email: studying@duzui.onmicrosoft.com
-phone: +86 15750801507
-website: https://lonelydrunk.github.io/sea-blog/
-linkedin: #
-github: lonelydrunk
-twitter: 9uEDHX5d6xA6G3L#
-facebook: profile.php?id=100049180174760#
-instagram: #
-pinterest: #
-
-# Newsletter
-mailchimp: 
+# Author Settings
+author: Zcj # add your name
+author-img: zcj.jpg # add your photo
+about-author: 做一个正常的普通人。# add description
+social-twitter: # add your Twitter handle
+social-facebook: # add your Facebook handle
+social-github: prosinesser # add your Github handle
+social-linkedin: # add your Linkedin handle
+social-email: # add your Email address
 
 # Disqus
-discus_identifier: 
+discus-identifier:  # add your discus identifier
 
 # Tracker
 analytics: # Google Analytics
 
-# Paginate
-paginate: 4
-paginate_path: /page:num/
-
-# Build settings
+# Build Settings
 markdown: kramdown
-
 plugins:
-  - jekyll-paginate
-  - jekyll-feed
   - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
 
-include: [_pages]
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "package-lock.json", "assets/css/sass/"]
+paginate: 8
+paginate_path: "/page/:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
